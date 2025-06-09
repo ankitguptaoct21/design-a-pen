@@ -1,9 +1,16 @@
-console.log("Project Setup is done.")
+import { BallPen, GelPen, PenBody, Pencil, PenInk, PenNib } from "./models";
 
-const greeting = () => {
-    console.log("Message from Greeting.")
-}
+const gelPen = new GelPen(new PenBody(), new PenInk(), new PenNib())
+gelPen.refill()
+gelPen.write()
 
-setTimeout(() => {
-    console.log("Inside Timeout.")
-}, 1000)
+const ballPen = new BallPen(new PenBody(), new PenInk(), new PenNib())
+ballPen.refill()
+ballPen.write()
+
+/**
+ * Need To Improve:
+ * Why pencil has refill?
+ */
+const pencil = new Pencil(new PenBody(), new PenInk(), new PenNib())
+pencil.write()
