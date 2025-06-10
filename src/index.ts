@@ -8,9 +8,5 @@ const ballPen = new BallPen(new PenBody(), new PenInk(), new PenNib())
 ballPen.refill()
 ballPen.write()
 
-/**
- * Need To Improve:
- * Why pencil has refill?
- */
 const pencil = new Pencil(new PenBody(), new PenInk(), new PenNib())
 pencil.write()
