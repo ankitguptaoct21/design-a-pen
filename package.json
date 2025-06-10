@@ -1,0 +1,29 @@
+{
+  "name": "design-a-pen",
+  "version": "1.0.0",
+  "description": "Low Level Design of a Pen",
+  "homepage": "https://github.com/ankitguptaoct21/design-a-pen#readme",
+  "bugs": {
+    "url": "https://github.com/ankitguptaoct21/design-a-pen/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankitguptaoct21/design-a-pen.git"
+  },
+  "license": "MIT",
+  "author": "Ankit Gupta",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "rm -rf ./dist && tsc",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.30",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
